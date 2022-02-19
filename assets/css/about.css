@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    color: #302e4d;
+    font-family: rubik;
+    
+}
+.container{
+    /* display: flex; */
+}
+.sidebar{
+    display: inline-block;
+    min-height: 100vmin;
+    background-color: #fdf9ff;
+    border-right: 1px solid #d4d4e3;
+    
+}
+.hidden{
+    display: none !important;
+}
+.logo{
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo a{
+    position: relative;
+    text-decoration: none;
+    font-family: rubikbold;
+    font-size: 2.5em;
+    line-height: 1.5;
+    padding: 0px 10px;
+}
+
+a:link{
+    color: #302e4d;
+}
+a:visited{
+    color: #302e4d;
+}
+a:active{
+    color: #302e4d;
+}
+.logo a::before{
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-top: 4px solid #ec1839;
+    border-left: 4px solid #ec1839;
+}
+.logo a::after{
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-bottom: 4px solid #ec1839;
+    border-right: 4px solid #ec1839;
+}
+
+.menu ul{
+    padding-top: 28px;
+    padding-left: 30px;
+    padding-right: 10px;
+    list-style: none;
+}
+.menu li{
+    text-decoration: none;
+    border-bottom: 1px solid #d4d4e3;
+    margin-right: 30px;
+    
+}
+.menu li:hover{
+    padding-left: 3px;
+    cursor: pointer;
+}
+.menu ul li:first-child a{
+    color: #ec1839;
+}
+.menu ul li:first-child:hover{
+    padding-left: 0;
+}
+.menu li a{
+    display: block;
+    line-height: 50px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.menu li i{
+    padding-right: 12px;
+}
+.menu li:nth-child(2) i{
+    padding-right: 13px;
+}
+.menu li:nth-child(4) i{
+    padding-right: 11px;
+}
+.menu li a:hover{
+    color: #ec1839;
+}
+.view{
+    margin-top: 50px;
+    padding-left: 30px;
+    background-color: #fdf9ff;
+}
+
+.copyright{
+    position: fixed;
+    bottom: 20px;
+    padding-left: 30px;
+    font-size: 80%;
+    color: rgba(20, 19, 19, 0.5)
+}
+.main{
+    /* grid-column: span 10; */
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vmin;
+    background-color: #f2f2fc;
+}
